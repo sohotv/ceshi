@@ -1,5 +1,7 @@
 # ceshi 测试仓库
 
+🌐 个人主页：https://sohotv.github.io/ceshi/
+
 由小金于 2026-10-29 创建。
 
 ## 用途
