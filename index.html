@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sam 的主页</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #0f1220;
+    --card: #1a1f35;
+    --text: #e8eaf6;
+    --muted: #9aa3c7;
+    --accent: #6c8cff;
+    --accent2: #a06cff;
+  }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f7ff;
+      --card: #ffffff;
+      --text: #1a1f35;
+      --muted: #5a6390;
+      --accent: #4a6cf7;
+      --accent2: #8a4af7;
+    }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 32px 20px;
+  }
+  .wrap { width: 100%; max-width: 560px; }
+  .hero {
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    border-radius: 24px;
+    padding: 48px 32px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .avatar {
+    width: 88px; height: 88px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 40px;
+    margin: 0 auto 16px;
+    border: 3px solid rgba(255,255,255,.4);
+  }
+  .hero h1 { font-size: 28px; margin-bottom: 8px; }
+  .hero p { opacity: .9; font-size: 15px; }
+  .card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 20px;
+  }
+  .card h2 { font-size: 17px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+  .card p { color: var(--muted); font-size: 15px; line-height: 1.7; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+    color: var(--accent);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .contact-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--muted) 20%, transparent);
+  }
+  .contact-item:last-child { border-bottom: none; }
+  .contact-item .label { color: var(--muted); font-size: 14px; }
+  .contact-item .value { font-weight: 600; font-size: 15px; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 8px 0 24px; }
+  footer a { color: var(--accent); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div class="avatar">🚀</div>
+    <h1>Sam</h1>
+    <p>爱折腾 · 在路上</p>
+  </div>
+
+  <div class="card">
+    <h2>👋 关于我</h2>
+    <p>喜欢研究和折腾各种工具与技术，相信用自动化把生活变简单。这个页面由 AI 助手小金帮忙搭建，托管在 GitHub 上。</p>
+  </div>
+
+  <div class="card">
+    <h2>🏷 标签</h2>
+    <div class="tags">
+      <span class="tag">技术折腾</span>
+      <span class="tag">自动化</span>
+      <span class="tag">效率工具</span>
+      <span class="tag">持续学习中</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>📮 联系我</h2>
+    <div class="contact-item">
+      <span class="label">微信号</span>
+      <span class="value">86244355</span>
+    </div>
+    <div class="contact-item">
+      <span class="label">电话</span>
+      <span class="value">13791005313</span>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Sam · <a href="https://github.com/sohotv">GitHub</a> · 由小金 ✨ 维护
+  </footer>
+</div>
+</body>
+</html>
